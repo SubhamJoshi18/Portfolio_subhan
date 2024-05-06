@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {useState} from 'react';
 
 export const useDownloadPdf = () => {
   const [loading, setLoading] = useState(false);
 
-  const handleDownload = async (cvPath, fileName) => {
+  const handleDownload = async (cvPath: any, fileName: any) => {
     setLoading(true);
     try {
       const response = await fetch(cvPath); // Fetch the CV file

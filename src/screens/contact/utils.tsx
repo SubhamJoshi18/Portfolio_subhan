@@ -4,10 +4,6 @@ const handleOpenSocialNetwork = (url: string) => () => {
   window.open(url, '_blank');
 };
 
-const handleOpenGmail = () => {
-  window.location.href = `mailto:${'evgennikolenko.ua@gmail.com'}`;
-};
-
 export const socialNetworks = (size: number = 54, isFooter = false) => [
   <button
     title="linkedin"
